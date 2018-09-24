@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import partPopper from '../assets/party-popper.jpg'
 
 class AgeStatus extends Component {
   timeSince(date) {
@@ -20,6 +21,7 @@ class AgeStatus extends Component {
       <div>
         <h3>{this.props.date}</h3>
         <h4>Congrats on {this.timeSince(this.props.date)}!</h4>
+        <img src={partPopper} alt="party-popper" className="party-popper" />
       </div>
     )
   }
